@@ -1,52 +1,52 @@
-# 🌡️ TemperatureHumidityWarning - IoT Tabanlı Sıcaklık ve Nem Uyarı Sistemi
+# 🌡️ TemperatureHumidityWarning – IoT-Based Temperature and Humidity Alert System
 
-Bu proje, DHT11 sensörü kullanarak ortam sıcaklığı ve nemini ölçer. Ölçülen değerler LCD ekran üzerinden görüntülenir ve Blynk uygulaması aracılığıyla uzaktan takip edilebilir. Sıcaklık belirli bir değerin üzerine çıktığında buzzer ve LED ile uyarı verilir. Uyarı sırasında Super Mario melodisi çalınır.
+This project measures ambient temperature and humidity using a DHT11 sensor. The measured values are displayed on an LCD screen and can also be monitored remotely via the Blynk application. When the temperature exceeds a predefined threshold, an alert is triggered with a buzzer and LED. During the alert, a Super Mario melody is played.
 
-## [📹 Proje Videosu](https://www.youtube.com/watch?v=UFVGz6wSowM)
+## [📹 Project Video](https://www.youtube.com/watch?v=UFVGz6wSowM)
 
-## 🎯 Amaç
-- Sıcaklık ve nem değerlerini ölçmek
-- LCD ekran üzerinden görüntülemek
-- Belirlenen sıcaklık üzerine çıktığında uyarı vermek
-- Blynk ile mobil cihaz üzerinden uzaktan izlemek
+## 🎯 Objective
+- Measure temperature and humidity values
+- Display values on an LCD screen
+- Trigger alerts when the temperature exceeds a defined limit
+- Monitor values remotely using the Blynk mobile app
 
-## 🧰 Kullanılan Malzemeler
+## 🧰 Components Used
 - ESP8266 (NodeMCU)
-- DHT11 Sensörü
-- I2C LCD 16x2 Ekran
-- Aktif Buzzer
+- DHT11 Sensor
+- I2C LCD 16x2 Display
+- Active  Buzzer
 - LED
-- Wi-Fi bağlantısı
-- Blynk Uygulaması
+- Wi-Fi Connection
+- Blynk Mobile App
 
-## 🔌 Donanım Bağlantıları
+## 🔌 Hardware Connections
 
 | Bileşen     | ESP8266 GPIO | Açıklama           |
 |-------------|---------------|--------------------|
-| DHT11       | GPIO4 (D2)    | Sıcaklık ve nem    |
-| LCD (I2C)   | SDA: D3 / SCL: D4 | LCD ekran        |
-| Buzzer      | GPIO5 (D1)    | Sesli uyarı        |
-| LED         | GPIO12 (D6)   | Görsel uyarı       |
+| DHT11       | GPIO4 (D2)    | Temperature & Humidity|    |
+| LCD (I2C)   | SDA: D3 / SCL: D4 | LCD display        |
+| Buzzer      | GPIO5 (D1)    | Audible alert        |
+| LED         | GPIO12 (D6)   | Visual alert       |
 
-## 📱 Blynk Ayarları
+## 📱 Blynk Settings
 - Template ID: `TMPL6K8JefXnv`
-- Auth Token: Blynk uygulamasından alınmalı
-- Virtual Pin V0: Sıcaklık
-- Virtual Pin V1: Nem
-- Virtual Pin V2: LED durumu
+- Auth Token: Obtain from the Blynk app
+- Virtual Pin V0: Temperature
+- Virtual Pin V1: Humidity
+- Virtual Pin V2: LED Status
 
-## 🛠️ Kurulum
-1. Arduino IDE üzerinden şu kütüphaneleri yükle:
+## 🛠️ Installation
+1. In the Arduino IDE, install the following libraries:
    - `DHT.h`
    - `LiquidCrystal_I2C.h`
    - `BlynkSimpleEsp8266.h`
    - `ESP8266WiFi.h`
-2. Kodda yer alan `auth`, `ssid` ve `pass` değişkenlerini kendi bilgilerinizle değiştirin.
-3. ESP8266'yı bağlayın ve `.ino` dosyasını karta yükleyin.
+2. Replace the auth, ssid, and pass variables in the code with your own credentials.
+3. Connect the ESP8266 and upload the .ino file to the board.
 
-## 🎵 Alarm Sistemi
-Sıcaklık sınır üzerine çıktığında buzzer üzerinden Super Mario melodisi çalar ve LED yanar.
+## 🎵 Alarm System
+When the temperature exceeds the set limit, a Super Mario melody is played through the buzzer and the LED lights up.
 
-## 👨‍💻 Geliştirici
+## 👨‍💻 Developers
 - Muhammet Akif Ayan
 - Oğuzhan Yalçın
