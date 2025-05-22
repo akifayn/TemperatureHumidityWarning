@@ -49,3 +49,4 @@ Sıcaklık sınır üzerine çıktığında buzzer üzerinden Super Mario melodi
 
 ## 👨‍💻 Geliştirici
 - Muhammet Akif Ayan
+- Oğuzhan Yalçın
