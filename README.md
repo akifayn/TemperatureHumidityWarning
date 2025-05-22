@@ -7,7 +7,7 @@ Bu proje, DHT11 sensörü kullanarak ortam sıcaklığı ve nemini ölçer. Öl�
 ## 🎯 Amaç
 - Sıcaklık ve nem değerlerini ölçmek
 - LCD ekran üzerinden görüntülemek
-- 34°C üzerine çıktığında uyarı vermek
+- Belirlenen sıcaklık üzerine çıktığında uyarı vermek
 - Blynk ile mobil cihaz üzerinden uzaktan izlemek
 
 ## 🧰 Kullanılan Malzemeler
@@ -45,7 +45,7 @@ Bu proje, DHT11 sensörü kullanarak ortam sıcaklığı ve nemini ölçer. Öl�
 3. ESP8266'yı bağlayın ve `.ino` dosyasını karta yükleyin.
 
 ## 🎵 Alarm Sistemi
-Sıcaklık 34°C üzerine çıktığında buzzer üzerinden Super Mario melodisi çalar ve LED yanar.
+Sıcaklık sınır üzerine çıktığında buzzer üzerinden Super Mario melodisi çalar ve LED yanar.
 
 ## 👨‍💻 Geliştirici
 - Muhammet Akif Ayan
